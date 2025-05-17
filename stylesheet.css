@@ -1,0 +1,108 @@
+*{
+    font-family: "Helvetica", "Arial", sans-serif;
+}
+
+body {
+    background-color: #F7EFE7;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    width: 100%;
+    max-width: 880px;
+}
+
+.battleButtonRock,
+.battleButtonPaper,
+.battleButtonScissors{
+    font: 600 20px "Helvetica", sans-serif;
+    background-color: white;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    height: 104px;
+    border: 1px solid #E3E3E3;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.battleButtonRock:hover,
+.battleButtonPaper:hover,
+.battleButtonScissors:hover{
+    background-color: #E4E4E4;
+}
+
+.scoreBox{
+    background-color: white;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 88px;
+    border: 1px solid #E3E3E3;
+    border-radius: 16px;
+}
+
+.scoreTitle{
+    font: 300 16px/24px "Helvetica", sans-serif;
+    color: #717171;
+    margin-bottom: 8px;
+}
+
+.scoreHuman,
+.scoreComputer{
+    font: 600 20px "Helvetica", sans-serif;
+}
+
+.dialog{
+    background-color: white;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 320px;
+    border: 1px solid #E3E3E3;
+    border-radius: 16px;
+    margin: 16px 0 16px 0;
+    font: 400 16px/32px "Helvetica", sans-serif;
+    padding: 24px;
+    color: #555555;
+    text-align: center;
+}
+
+.replay{
+    background-color: #09C762;
+    font: 600 20px/32px "Helvetica", sans-serif;
+    color: white;
+    border: 1px solid #E3E3E3;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 100%;
+    max-width: 848px;
+    padding: 16px 16px;
+    height: auto;
+    line-height: normal;
+    flex: none;
+    margin-top: 16px;
+}
+
+.replay:hover{
+    background-color: #0EAE58;
+}
